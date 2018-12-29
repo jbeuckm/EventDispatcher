@@ -1,10 +1,11 @@
 {
   "name": "@jbeuckm/event-dispatcher",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Regular old EventDispatcher pattern with set of types fixed in the constructor.",
-  "main": "src/index.js",
+  "main": "./dist/main.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "webpack --mode production"
   },
   "jest": {
     "verbose": true,
@@ -27,6 +28,9 @@
     "@babel/preset-env": "^7.2.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
-    "jest": "^21.3.0-beta.15"
+    "babel-loader": "^8.0.4",
+    "jest": "^21.3.0-beta.15",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
   }
 }
