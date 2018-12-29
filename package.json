@@ -1,0 +1,32 @@
+{
+  "name": "event-dispatcher",
+  "version": "1.0.0",
+  "description": "Regular old EventDispatcher pattern with set of types fixed in the constructor.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbeuckm/EventDispatcher.git"
+  },
+  "author": "Joseph Beuckman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jbeuckm/EventDispatcher/issues"
+  },
+  "homepage": "https://github.com/jbeuckm/EventDispatcher#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "jest": "^21.3.0-beta.15"
+  }
+}
