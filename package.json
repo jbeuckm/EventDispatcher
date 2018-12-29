@@ -1,5 +1,5 @@
 {
-  "name": "event-dispatcher",
+  "name": "@jbeuckm/event-dispatcher",
   "version": "1.0.0",
   "description": "Regular old EventDispatcher pattern with set of types fixed in the constructor.",
   "main": "src/index.js",
