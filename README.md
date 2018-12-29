@@ -5,7 +5,7 @@ Regular old EventDispatcher pattern with set of types fixed in the constructor.
 
 ### Installation
 
-`yarn add @jbeuckm/EventDispatcher`
+`yarn add @jbeuckm/event-dispatcher`
 
 ### Usage
 
@@ -18,7 +18,7 @@ class MyDispatcher extends EventDispatcher {
 		super([MY_EVENT_TYPE, MY_OTHER_EVENT_TYPE])
 	}
 	
-	handleSomeAction = action => {
+	runAndTellThat = action => {
 		this.dispatchEvent(MY_EVENT_TYPE, action.data)
 	}
 }
