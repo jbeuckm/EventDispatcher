@@ -34,7 +34,7 @@ describe('EventDispatcher', () => {
       done()
     })
 
-    ED.dispatchEvent(TEST_EVENT_TYPE, 123)
+    ED.dispatchEvent(TEST_EVENT_TYPE, { data: 123 })
   })
 
   it('can not remove an unknown listener', done => {

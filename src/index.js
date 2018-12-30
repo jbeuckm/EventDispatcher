@@ -49,7 +49,7 @@ class EventDispatcher {
     this.validateType(type)
 
     for (let listener of this.listeners[type]) {
-      listener({ type, data })
+      listener({ ...data, type })
     }
   }
 }
