@@ -17,7 +17,7 @@ class MyDispatcher extends EventDispatcher {
 	constructor() {
 		super([MY_EVENT_TYPE, MY_OTHER_EVENT_TYPE])
 	}
-	
+
 	runAndTellThat = action => {
 		this.dispatchEvent(MY_EVENT_TYPE, action.data)
 	}
@@ -31,8 +31,8 @@ import MyDispatcher from './MyDispatcher'
 
 const thing = new MyDispatcher()
 
-const handler = ({type, data}) => {
-	console.log('Received an event...', data)
+const handler = (event) => {
+	console.log(`Received a "${event.type}" event...`, event)
 }
 
 thing.addEventListener(MY_EVENT_TYPE, handler)
@@ -44,4 +44,3 @@ Clean up...
 ```
 thing.removeEventListener(MY_EVENT_TYPE, handler)
 ```
-
